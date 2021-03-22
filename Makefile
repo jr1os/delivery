@@ -20,3 +20,6 @@ init_db:
 
 test:
 	FLASK_ENV=test pytest tests/ -v --cov=delivery
+
+run:
+	FLASK_APP=delivery/app.py FLASK_ENV=development flask run
